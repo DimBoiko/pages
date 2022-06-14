@@ -1,0 +1,205 @@
+.footer {
+	background-color: $mainBlue;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		padding: 95px 0px 74px 0px;
+		@media (max-width:745px) {
+			padding: 25px 0px 25px 0px;
+		}
+		@media (max-width:420px) {
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+	&__colum{
+		@media (max-width:420px) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+		}
+		img{
+			margin-bottom: 15px;
+		}
+		img{
+			@media (max-width:420px) {
+				display: none;
+				margin-bottom: 0px;
+			}	
+		}
+	}
+	&__social-media {
+		margin-top: 20px;
+		display: flex;
+		gap: 10px;
+		@media (max-width:920px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 0px;
+			gap: 10px;
+		}
+	}
+	&__social-media-item {
+		width: 55px;
+		max-height: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		background-color: $mainBlue;
+		box-shadow: 0px 0px 1px 1px $mainYellow;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+	&__social-media-item:hover {
+		box-shadow: 0px 0px 0px 0px $mainYellow;
+		background-color: white;
+		border: none;
+		.footer__icon {
+			fill: black;
+		}
+	}
+	&__icon {
+		max-width: 16px;
+		max-height: 16px;
+		fill: white;
+		
+	}
+	.facebook {
+		max-width: 11px;
+	}
+
+	&__colum-title {
+		font-family: "Cardo";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 34px;
+		letter-spacing: 0.384px;
+		color: #ffffff;
+		margin-bottom: 24px;
+		@media (max-width:745px) {
+			font-size: 17px;
+		}
+		@media (max-width:420px) {
+			margin: 0px;
+		}	
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: 19px;
+		@media (max-width:420px) {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+			gap: 6px;
+			max-width: 360px;
+		}
+		li {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__link {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 31px;
+		letter-spacing: 0.18px;
+		color: #b4c7e7;
+		margin-left: 13px;
+		@media (max-width:745px) {
+			font-size: 13px;
+			margin-left: 0px;
+			line-height: 20px;
+		}
+	}
+	.link-marker {
+		align-items: center;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: $mainYellow;
+		position: relative;
+		@media (max-width:920px) {
+			display: none;
+		}
+	}
+	.link-marker::after {
+		content: "";
+		position: absolute;
+		left: -320%;
+		display: block;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: $mainYellow;
+	}
+	.link-marker::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -153%;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: $mainYellow;
+	}
+	.info-block {   
+		font-family: "Cardo";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		letter-spacing: 0.36px;
+		color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+		@media (max-width:745px) {
+			gap: 15px;
+		}
+		&__title {
+			font-family: "Cardo";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 27px;
+			letter-spacing: 0.36px;
+			color: #ffffff;
+		}
+		&__title::after{
+			display: none;
+		}
+		&__item{
+			display: flex;
+			justify-content: space-between;
+			@media (max-width:920px) {
+				display: inline;
+			}
+		}
+		&__name {
+			max-width: 234px;
+			display: block;
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 27px;
+			color: #b4c7e7;
+			text-align:end;
+			@media (max-width:920px) {
+				text-align:start;
+			}
+			@media (max-width:745px) {
+				font-size: 14px;
+			}
+		}
+	}
+}

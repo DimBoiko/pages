@@ -1,0 +1,51 @@
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.yellow-btn {
+	min-width: 222px;
+	max-width: fit-content;
+	max-height: 66px;
+	font-family: "Cardo";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	color: $mainBlue;
+	line-height: 28px;
+	text-transform: capitalize;
+
+	padding: 19px 54px;
+	border: none;
+	background-color: $mainYellow;
+	cursor: pointer;
+
+	transition: all 0.2s ease;
+}
+
+.yellow-btn:hover{
+	background-color: white;
+}
+.yellow-btn:active{
+	box-shadow: 0px 0px 2px 2px $mainYellow;
+}
+
+.white-btn{
+	max-width: fit-content;
+	max-height: 66px;
+	font-family: "Cardo";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	color: $mainBlue;
+	line-height: 28px;
+	padding: 19px 54px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	border: 2px solid #FFCA42;
+	text-transform: capitalize;
+	transition: all 0.3s ease;
+}
+.white-btn:hover{
+	box-shadow: 0px 0px 10px 1px $mainYellow;
+}

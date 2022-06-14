@@ -1,0 +1,96 @@
+.header {
+	background-color: $mainBlue;
+	min-height: 150px;
+	.container {
+		min-height: 150px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__row {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0px 10px;
+	}
+
+	&__logo {
+		cursor: pointer;
+	}
+
+	&__social-media {
+		display: flex;
+		align-content: center;
+		gap: 10px;
+		margin-left: 38px;
+		margin-right: auto;
+		@media (max-width:427px) {
+			display: none;
+		}
+	}
+
+	&__social-media-item {
+		position: relative;
+		width: 45px;
+		height: 45px;
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	&__social-media-item-svg {
+		max-width: 15px;
+		transition: all 0.2s ease;
+	}
+	&__social-media-item-svg.facebook {
+		max-width: 10px;
+	}
+	&__social-media-item:hover {
+		box-shadow: 0px 0px 1px 1px $mainYellow;
+		background: rgba(78, 78, 78, 0.046);
+		fill: $mainYellow;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		@media (max-width: 1051px) {
+			display: none;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		gap: 47px;
+	}
+
+	&__nav-link {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 26px;
+		letter-spacing: 0.17px;
+		color: #f6f8fc;
+		transition: all 0.3s ease;
+	}
+	&__nav-link:hover {
+		color: $mainYellow;
+	}
+	&__cart-svg {
+		max-width: 17px;
+		margin-left: 39px;
+		margin-right: 50px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+	&__cart-svg:hover {
+		fill: $mainYellow;
+	}
+	.yellow-btn {
+		@media (max-width: 1051px) {
+			display: none;
+		}
+	}
+}
